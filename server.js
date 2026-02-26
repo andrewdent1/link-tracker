@@ -76,11 +76,7 @@ app.get("/track", async (req, res) => {
 
 // Health check endpoint
 app.get("/", (req, res) => {
-  res.send(`
-    <h2>Link Tracker is running ✅</h2>
-    <p>Your tracking URL: <a href="/track">http://localhost:${PORT}/track</a></p>
-    <p>With UTMs: <code>http://localhost:${PORT}/track?utm_source=instagram&utm_medium=social&utm_campaign=launch</code></p>
-  `);
+  res.redirect("/track");
 });
 
 app.listen(PORT, () => {
