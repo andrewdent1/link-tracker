@@ -17,7 +17,7 @@ const express = require("express");
 const axios = require("axios");
 
 // ─── CONFIGURE THESE ───────────────────────────────────────────────────────
-const PRODUCT_URL = process.env.PRODUCT_URL;       // Where to redirect visitors
+const PRODUCT_URL = process.env.PRODUCT_URL; "https://app.toplinepro.com/checkout?session_id=1ecf5a27-4963-42e5-9814-59098c8e40b2";      // Where to redirect visitors
 const SLACK_WEBHOOK_URL = process.env.SLACK_WEBHOOK_URL; // From api.slack.com/messaging/webhooks
 const PORT = 3000;
 // ───────────────────────────────────────────────────────────────────────────
