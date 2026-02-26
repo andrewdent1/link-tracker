@@ -17,8 +17,8 @@ const express = require("express");
 const axios = require("axios");
 
 // ─── CONFIGURE THESE ───────────────────────────────────────────────────────
-const PRODUCT_URL = "https://your-product-page.com";       // Where to redirect visitors
-const SLACK_WEBHOOK_URL = "https://hooks.slack.com/services/YOUR/WEBHOOK/URL"; // From api.slack.com/messaging/webhooks
+const PRODUCT_URL = process.env.PRODUCT_URL;       // Where to redirect visitors
+const SLACK_WEBHOOK_URL = process.env.SLACK_WEBHOOK_URL; // From api.slack.com/messaging/webhooks
 const PORT = 3000;
 // ───────────────────────────────────────────────────────────────────────────
 
